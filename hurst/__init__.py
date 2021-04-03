@@ -143,8 +143,8 @@ def compute_Hc(series, kind="random_walk", min_window=10, max_window=None, simpl
         for further plotting log(data[0]) on X and log(data[1]) on Y
     """
 
-    if len(series)<100:
-        raise ValueError("Series length must be greater or equal to 100")
+    if len(series)<22:
+        raise ValueError("Series length must be greater or equal to 22")
 
     ndarray_likes = [np.ndarray]
     if "pandas.core.series" in sys.modules.keys():
